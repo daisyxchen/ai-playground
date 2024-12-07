@@ -1,0 +1,8 @@
+Web application deployment choices
+1. Vercel (fast with Github integrations), great option for POC iteration
+2. Elastic Container Service (lower cost and configurable by Terraform, need more leg work), great option for productionize the POC with known scaling trend
+3. Digital Oceans app service (lower cost than Vercel but hihger cost than ECS, without Github integrations), happy medium option.
+
+Web application types
+1. SPA (Single Page Application based on Create React App), can be set up in S3, distributed with CloudFront
+2. Next.js has more page rendering and data fetching models, improving client side page loading performance;  has dynmic routing to optimize devex
